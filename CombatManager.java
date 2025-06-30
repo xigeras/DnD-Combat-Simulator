@@ -28,19 +28,28 @@ public class CombatManager {
     }
 
     public void listCombatants() {
-        for (Combatant combatant : activeCombatants) {
-            System.out.println("Active Combatants: ");
-            System.out.println("Name: " + combatant.getName() + ", HP: " + combatant.getHp() + ", Initiative: " + combatant.getInitiative());
+        System.out.println("Active Combatants:");
+        if (activeCombatants.isEmpty()) {
+            System.out.println("  (none)");
+        } else {
+            for (int i = 0; i < activeCombatants.size(); i++) {
+                Combatant c = activeCombatants.get(i);
+                System.out.println((i + 1) + ". " + c.getName() + " (HP: " + c.getHp() + ", Initiative: " + c.getInitiative() + ", Type: " + c.getType() + ")");
+            }
         }
     }
 
     public void listDefeatedCombatants() {
-        for (Combatant combatant : defeatedCombatants) {
-            System.out.println("Defeated Combatants: ");
-            System.out.println("Name: " + combatant.getName() + ", HP: " + combatant.getHp() + ", Initiative: " + combatant.getInitiative());
+        System.out.println("Defeated Combatants:");
+        if (defeatedCombatants.length == 0) {
+            System.out.println("  (none)");
+        } else {
+            for (int i = 0; i < defeatedCombatants.length; i++) {
+                Combatant c = defeatedCombatants[i];
+                System.out.println((i + 1) + ". " + c.getName() + " (HP: " + c.getHp() + ", Initiative: " + c.getInitiative() + ", Type: " + c.getType() + ")");
+            }
         }
     }
-
     public void saveCombatants(String availableFile, String defeatedFile) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(availableFile))) {
             for (Combatant combatant : activeCombatants) {
