@@ -1,0 +1,3 @@
+Goblin,10,20
+Paladin,30,20
+Cleric,15,17

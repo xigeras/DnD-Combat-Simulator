@@ -29,12 +29,14 @@ public class CombatManager {
 
     public void listCombatants() {
         for (Combatant combatant : activeCombatants) {
+            System.out.println("Active Combatants: ");
             System.out.println("Name: " + combatant.getName() + ", HP: " + combatant.getHp() + ", Initiative: " + combatant.getInitiative());
         }
     }
 
     public void listDefeatedCombatants() {
         for (Combatant combatant : defeatedCombatants) {
+            System.out.println("Defeated Combatants: ");
             System.out.println("Name: " + combatant.getName() + ", HP: " + combatant.getHp() + ", Initiative: " + combatant.getInitiative());
         }
     }
