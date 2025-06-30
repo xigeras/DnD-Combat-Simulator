@@ -53,7 +53,7 @@ public class CombatManager {
     public void saveCombatants(String availableFile, String defeatedFile) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(availableFile))) {
             for (Combatant combatant : activeCombatants) {
-                writer.write(combatant.getName() + "," + combatant.getHp() + "," + combatant.getInitiative());
+                writer.write(combatant.getName() + "," + combatant.getHp() + "," + combatant.getInitiative() + "," + combatant.getType());
                 writer.newLine();
             }
         } catch (IOException e) {
@@ -62,7 +62,7 @@ public class CombatManager {
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(defeatedFile))) {
             for (Combatant combatant : defeatedCombatants) {
-                writer.write(combatant.getName() + "," + combatant.getHp() + "," + combatant.getInitiative());
+                writer.write(combatant.getName() + "," + combatant.getHp() + "," + combatant.getInitiative() + "," + combatant.getType());
                 writer.newLine();
             }
         } catch (IOException e) {
