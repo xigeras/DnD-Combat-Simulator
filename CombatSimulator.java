@@ -49,6 +49,9 @@ public class CombatSimulator {
                 manager.listDefeatedCombatants();
                 break;
             case 4:
+                manager.viewTurnOrder();
+                break;
+            case 5:
                 manager.saveCombatants("availableCombatants.txt","defeatedCombatants.txt");
                 System.out.println("Combatants have been saved for later. Goodbye!");
                 return;
@@ -57,8 +60,9 @@ public class CombatSimulator {
     public static void mainMenu() {
         System.out.println("Welcome to the Combat Simulator!");
         System.out.println("1. Add combatant");
-        System.out.println("2. Start combat / view turn order");
+        System.out.println("2. Start combat");
         System.out.println("3. View combatants");
-        System.out.println("4. Exit");        
+        System.out.println("4. View turn order");
+        System.out.println("5. Exit");        
     }
 }

@@ -154,6 +154,21 @@ public class CombatManager {
         System.out.println("Combat has ended.");
     }
 
+    public void viewTurnOrder() {
+    if (activeCombatants.isEmpty()) {
+        System.out.println("No combatants in the turn order.");
+        return;
+    }
+    // Sort by initiative (highest first)
+    ArrayList<Combatant> sorted = new ArrayList<>(activeCombatants);
+    sorted.sort((a, b) -> b.getInitiative() - a.getInitiative());
+    System.out.println("Current Turn Order:");
+    for (int i = 0; i < sorted.size(); i++) {
+        Combatant c = sorted.get(i);
+        System.out.println((i + 1) + ". " + c.getName() + " (Initiative: " + c.getInitiative() + ", HP: " + c.getHp() + ")");
+    }
+}
+
     public void moveToDefeated(Combatant combatant) {
         activeCombatants.remove(combatant);
         
