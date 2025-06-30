@@ -132,7 +132,7 @@ public class CombatManager {
 
                 int damage = diceRoller.rollDie(sides);
                 System.out.println("Rolled a d" + sides + " for " + damage + " damage!");
-
+                System.out.println(ANSIColors.RED + "YEEEEOUCH!" + ANSIColors.RESET);
                 target.setHp(target.getHp() - damage);
                 System.out.println(target.getName() + " now has " + target.getHp() + " HP.");
 

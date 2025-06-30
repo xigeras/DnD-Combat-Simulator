@@ -18,13 +18,13 @@ public class CombatSimulator {
         int choice;
         do{
             mainMenu();
-            choice = InputValidator.getValidInteger("Enter your choice (1-4): ", 1, 4);
+            choice = InputValidator.getValidInteger("Enter your choice (1-5): ", 1, 5);
             System.out.println("You chose option " + choice);
             menuChoice(choice);
             System.out.print("\u001B[32m" + "Press enter to continue..."+ "\u001B[0m");
             kb.nextLine();
             clearConsole();
-        } while (choice != 4);
+        } while (choice != 5);
     }
 
     public static void clearConsole() {
@@ -58,7 +58,10 @@ public class CombatSimulator {
         }
     }
     public static void mainMenu() {
+        System.out.println(ANSIColors.CYAN + "✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦");
         System.out.println("Welcome to the Combat Simulator!");
+        System.out.println("✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦" + ANSIColors.RESET);
+        System.out.println();
         System.out.println("1. Add combatant");
         System.out.println("2. Start combat");
         System.out.println("3. View combatants");
