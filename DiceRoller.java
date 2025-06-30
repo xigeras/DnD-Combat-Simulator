@@ -4,11 +4,12 @@ public class DiceRoller {
     Random rand = new Random();
     private static final int[] VALID_SIDES = {4, 6, 8, 10, 12, 20, 100};
     //rolls a single die with the specified number of sides
-    public int rollDie(int sides)
+    public int rollDie(int sides) {
         if (!isValidDie(sides)) {
             throw new IllegalArgumentException("Invalid die sides: " + sides);
         }
         return (int) (Math.random() * sides) + 1;
+    }
 
     // rolls multiple die and returns the total
     public int rollMultipleDie(int sides, int count) {

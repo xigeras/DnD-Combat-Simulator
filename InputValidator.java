@@ -27,15 +27,16 @@ public class InputValidator {
         }
         return userInput;
     }
-    public static getValidDiceSides(String prompt) {
-
+    public static int getValidDiceSides(String prompt) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(prompt);
+        String input = scanner.nextLine();
         try { 
             int count = Integer.parseInt(input);
             if (count > 0) {
                 return count;
             } else {
                 throw new IllegalArgumentException("You must roll at least one die.");
-                return getValidDiceCount(prompt);
             }
         } catch (NumberFormatException e) {
             System.out.println("Error: Invalid input. Please enter a valid number.");

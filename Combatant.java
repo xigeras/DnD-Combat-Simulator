@@ -37,9 +37,9 @@ public class Combatant {
     public void setType(String type) {
         this.type = type;
     }
-
+    @Override
     public String toString() {
-        return """ + name + " - HP: " + hp + ", Initiative: " + initiative + ", Type: " + type + """;
+        return name + " - HP: " + hp + ", Initiative: " + initiative + ", Type: " + type;
     }
     
     public boolean isDefeated() {
