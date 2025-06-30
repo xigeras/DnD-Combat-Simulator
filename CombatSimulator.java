@@ -50,7 +50,7 @@ public class CombatSimulator {
                 break;
             case 4:
                 manager.saveCombatants("availableCombatants.txt","defeatedCombatants.txt");
-                System.out.println("Data saved. Goodbye!");
+                System.out.println("Combatants have been saved for later. Goodbye!");
                 return;
         }
     }
