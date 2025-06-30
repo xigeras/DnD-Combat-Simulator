@@ -76,3 +76,4 @@ Welcome to the Combat Simulator!
  - Only one combat encounter is tracked at a time.
  - More detailed combat logs and undo/redo features could be added in the future.
  - Perhaps in the future it could be used to manage D&D Sessions.
+ - Maybe a saving and loading process for different D&D sessions.
