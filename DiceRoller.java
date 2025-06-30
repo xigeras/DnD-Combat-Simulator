@@ -8,7 +8,7 @@ public class DiceRoller {
         if (!isValidDie(sides)) {
             throw new IllegalArgumentException("Invalid die sides: " + sides);
         }
-        return (int) (Math.random() * sides) + 1;
+        return rand.nextInt(sides) + 1;
     }
 
     // rolls multiple die and returns the total

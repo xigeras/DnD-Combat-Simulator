@@ -115,7 +115,7 @@ public class CombatManager {
 
         while (continueCombat && !activeCombatants.isEmpty()) {
             Combatant currentCombatant = activeCombatants.get(turnIndex);
-            System.out.println("Current turn: " + currentCombatant.name);
+            System.out.println("Current turn: " + currentCombatant.getName());
 
             System.out.println("Enter target name: ");
             String targetName = scanner.nextLine();
@@ -143,7 +143,7 @@ public class CombatManager {
             } else {
                 System.out.println("Target not found.");
             }
-            System.out.println("Continue combaT? (y/n): ");
+            System.out.println("Continue combat? (y/n): ");
             String response = scanner.nextLine();
             continueCombat = response.equalsIgnoreCase("y");
 
