@@ -45,14 +45,14 @@ Welcome to the Combat Simulator!
   Current turn: Goblin (Initiative: 15, HP: 7)
   Enter damage die (e.g., 6 for d6, 8 for d8 and so on): 6
   Rolled a d6 for 4 damage!
-  Goblin now has 2 HP.
+  Goblin now has 3 HP.
   ```
 
 - **Viewing combatants:**
   ```
   3. View combatants
   Active Combatants:
-  1. Goblin (HP: 2, Initiative: 15, Type: Monster)
+  1. Goblin (HP: 3, Initiative: 15, Type: Monster)
   Defeated Combatants:
   (none)
   ```
@@ -61,7 +61,7 @@ Welcome to the Combat Simulator!
   ```
   4. View turn order
   Current Turn Order:
-  1. Goblin (Initiative: 15, HP: 2)
+  1. Goblin (Initiative: 15, HP: 3)
   ```
 
 - **Exiting and saving:**
