@@ -52,7 +52,7 @@ Welcome to the Combat Simulator!
   ```
   3. View combatants
   Active Combatants:
-  1. Goblin (HP: 3, Initiative: 15, Type: Monster)
+  1. Goblin (HP: 2, Initiative: 15, Type: Monster)
   Defeated Combatants:
   (none)
   ```
@@ -61,7 +61,7 @@ Welcome to the Combat Simulator!
   ```
   4. View turn order
   Current Turn Order:
-  1. Goblin (Initiative: 15, HP: 3)
+  1. Goblin (Initiative: 15, HP: 2)
   ```
 
 - **Exiting and saving:**
