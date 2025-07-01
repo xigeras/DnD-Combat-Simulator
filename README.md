@@ -45,7 +45,7 @@ Welcome to the Combat Simulator!
   Current turn: Goblin (Initiative: 15, HP: 7)
   Enter damage die (e.g., 6 for d6, 8 for d8 and so on): 6
   Rolled a d6 for 4 damage!
-  Goblin now has 3 HP.
+  Goblin now has 2 HP.
   ```
 
 - **Viewing combatants:**
